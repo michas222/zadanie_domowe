@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodziarnia Michał Kamiński </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="title">Lodziarnia "Michał Kamiński"</div>
+        <form action="#">
+            <div class="galki">
+                <div class="input-box">
+                    <span class="titles">Ile gałek lodów sobie życzysz?</span>
+                    <input type="text" placeholder="Podaj Ilosc Galek" name="ilosc" required>
+                </div>  
+            </div>
+            <div class="rozek">
+                <input type="radio" name="rozek" id="dot-1" value="1">
+                <input type="radio" name="rozek" id="dot-2" value="2">
+                <input type="radio" name="rozek" id="dot-3" value="3">
+                <span class="titles">Jaki rodzaj rożka wolisz??</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="wybor" name="rozek">Pojedynczy</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="wybor" name="rozek">Podwójny</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="wybor" name="rozek">Słodki duży</span>
+                    </label>
+                </div>
+            </div>
+            <div class="dodadki">
+                <span class="titles">Dodatki</span>
+                <input type="checkbox" name="add" value="3" ><span>Polewa Czekoladowa</span>
+                <input type="checkbox" name="add" value="3" ><span>Posypka</span>
+                <input type="checkbox" name="add" value="3" ><span>Polewa Owocowa</span>
+            </div>
+            <div class="rozek">
+                <input type="radio" name="dis" id="dot-4" value="1">
+                <input type="radio" name="dis" id="dot-5" value="0.8">
+                <input type="radio" name="dis" id="dot-6" value="0.5">
+                <span class="titles">Zniżka</span>
+                <div class="category">
+                    <label for="dot-4">
+                        <span class="dot four"></span>
+                        <span class="wybor">Brak</span>
+                    </label>
+                    <label for="dot-5">
+                        <span class="dot five"></span>
+                        <span class="wybor">Ulgowa</span>
+                    </label>
+                    <label for="dot-6">
+                        <span class="dot six"></span>
+                        <span class="wybor">Stałego Klienta</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <button class="main_btn" onClick="obliczanie(this.form)"> <a href="#">Kupuję!</a></button>
+                <span id="cena"></span>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

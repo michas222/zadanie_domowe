@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    z-index: 3;
+    background-color: #fe3b6f;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6 30%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+
+
+.container form .galki{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0 12px 0;
+}
+
+form .galki .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.galki .input-box .titles{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.galki .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px ;
+    transition: all 0.3s ease;
+}
+
+.galki .input-box input:focus,
+.galki .input-box input:valid{
+    border-color: #9b59b6;
+}
+
+form .galki .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+form .rozek .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rozek .category label{
+    display: flex;
+}
+
+.rozek .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+#dot-4:checked ~ .category .four,
+#dot-5:checked ~ .category .five,
+#dot-6:checked ~ .category .six{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_btn{
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.main_btn{
+    color: #fff;
+    font-weight: 600;
+    height: 100%;
+    width: 80%;
+    font-size: 1.6rem;
+    background: #833ab4;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main_btn a{
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    z-index: 2;
+}
+
+
+.main_btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ff1ead;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.main_btn:hover:after{
+  width: 100%;
+}
+
+
+
+input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    appearance: none;
+    background-color: #d5d5d5;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.titles{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"]:after{
+    font-family: "Font Awesome 5 free";
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 18px;
+    color: #fff;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1px;
+}
+
+input[type="checkbox"]:hover{
+    background-color: #a5a5a5;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #ff1ead;
+}
+
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+
+#cena{
+    color: #ff1ead;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
