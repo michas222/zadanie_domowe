@@ -35,7 +35,7 @@ function obliczanie(dane) {
     }
 
 
-    console.log('gowno')
+    
     cena.innerHTML = "Do zapłaty " +cena_koncowa.toFixed(2) + " pln";
     
 }
